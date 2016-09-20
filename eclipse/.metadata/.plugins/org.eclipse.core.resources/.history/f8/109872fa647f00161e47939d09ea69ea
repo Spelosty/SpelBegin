@@ -1,0 +1,8 @@
+package com.spelosty.testmod;
+
+import net.minecraftforge.fml.common.Mod;
+
+@Mod(modid="TestMod", name="Test Mod", version="1.10.2-1.0")
+public class testmod {
+
+}

@@ -1,0 +1,8 @@
+package com.spelosty.spelbegins;
+
+import net.minecraftforge.fml.common.Mod;
+
+@Mod(modid="SpelBegins", name="Spel Begins", version="1.10.2-1.0")
+public class SpelBegins {
+
+}

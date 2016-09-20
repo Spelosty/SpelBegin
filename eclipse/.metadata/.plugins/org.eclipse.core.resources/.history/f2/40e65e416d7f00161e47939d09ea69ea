@@ -1,0 +1,33 @@
+package com.spelosty.spelbegins;
+
+import com.spelosty.spelbegins.proxy.IProxy;
+
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.SidedProxy;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+
+@Mod(modid="SpelBegins", name="Spel Begins", version="1.10.2-1.0")
+public class SpelBegins {
+	@Mod.Instance("SpelBegins")
+		public static SpelBegins instance;
+	
+	@SidedProxy(clientSide = "com.spelosty.spelbegins.proxy.ClientProxy", serverSide = "com.spelosty.spelbegins.proxy.ServerProxy")
+	public static IProxy proxy;
+	
+	@Mod.EventHandler
+	public void preInit(FMLPreInitializationEvent event){
+		
+	}
+	
+	@Mod.EventHandler
+	public void init(FMLInitializationEvent event){
+		
+	}
+	
+	@Mod.EventHandler
+	public void postInit(FMLPostInitializationEvent event){
+		
+	}
+}

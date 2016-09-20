@@ -1,0 +1,18 @@
+[
+{
+  "modid": "SpelBegins",
+  "name": "Spel Begins",
+  "description": "My first test mod.",
+  "version": "1.0",
+  "mcversion": "1.10.2",
+  "logoFile": "",
+  "url": "",
+  "updateUrl": "",
+  "authorList": [ "Spelosty" ],
+  "credits": "Thanks to:
+Pahimar - EE3 creator. Wonderfully done Let's Mod series.",
+  "parent": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
