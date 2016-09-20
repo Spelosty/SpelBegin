@@ -14,7 +14,7 @@ public class SpelBegins {
 	@Mod.Instance(Reference.MOD_ID)
 		public static SpelBegins instance;
 	
-	@SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
+	@SidedProxy(clientSide = "com.spelosty.spelbegins.proxy.ClientProxy", serverSide = "com.spelosty.spelbegins.proxy.ServerProxy")
 	public static IProxy proxy;
 	
 	@Mod.EventHandler
