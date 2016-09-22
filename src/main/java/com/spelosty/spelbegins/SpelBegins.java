@@ -1,5 +1,6 @@
 package com.spelosty.spelbegins;
 
+import com.spelosty.spelbegins.handler.ConfigurationHandler;
 import com.spelosty.spelbegins.proxy.IProxy;
 import com.spelosty.spelbegins.reference.Reference;
 
@@ -9,7 +10,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid=Reference.MOD_ID, name= Reference.MOD_NAME, version= Reference.VERSION)
+@Mod(modid=Reference.MOD_ID, name= Reference.MOD_NAME, version= Reference.VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
 public class SpelBegins {
 	@Mod.Instance(Reference.MOD_ID)
 		public static SpelBegins instance;
@@ -19,7 +20,7 @@ public class SpelBegins {
 	
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event){
-		
+		ConfigurationHandler.init(event.getSuggestedConfigurationFile());
 	}
 	
 	@Mod.EventHandler
