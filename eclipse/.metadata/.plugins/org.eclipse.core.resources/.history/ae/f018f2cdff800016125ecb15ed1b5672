@@ -1,0 +1,5 @@
+package com.spelosty.spelbegins.utility;
+
+public class LogHelper {
+
+}
